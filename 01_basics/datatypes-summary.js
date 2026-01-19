@@ -34,6 +34,28 @@ const myFuction = function(){
 
 console.log(myObj);
 
+//Stack (Primitive) => Getcopies, Heap (Non-Primitive) get Original value when we change 
+
+let myYoutubename = "pawanpatil"
+
+let anotherName = myYoutubename
+anotherName = "chai aur code"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "pavan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
  
