@@ -32,7 +32,7 @@ const myFuction = function(){
     console.log("Hello World")
 }
 
-console.log(myObj);
+// console.log(myObj);
 
 //Stack (Primitive) => Getcopies, Heap (Non-Primitive) get Original value when we change 
 
