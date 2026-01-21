@@ -25,12 +25,37 @@ const result = addTwoNum(3, 5)
 
 function loginUserMessage(username = "Sam") {
     if (!username) {
-        console.log("Please enter a username");
+        // console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
 }
 
 // console.log(loginUserMessage("pawan"))
-console.log(loginUserMessage("Hitesh"))
+// console.log(loginUserMessage("Hitesh"))
+
+
+function calculateCartPrice(...num1) {
+    return num1
+
+}
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+
+const user = {
+    username: "pawan",
+    price: 299
+}
+
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+
+// handleObject(user)
+handleObject({
+    username: "patil",
+    price: 999
+})
+
+
 
