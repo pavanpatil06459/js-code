@@ -33,11 +33,17 @@ const chai = () => {
 
 () => {} // this is arrow fucnction syntax
 
-// const addTwo = (num1, num2 ) => {
+//this is explicit return
+
+// const addTwo = (num1, num2 ) => {    // if write in curly braces {} write return 
 //     return num1 + num2              // this is called basic arrow function
-// }
+// }                                    
 // console.log(addTwo(3,4));
 
 
-const addTwo = (num1, num2 ) => num1 + num2              
+// this is implicit return
+// const addTwo = (num1, num2 ) => num1 + num2  
+
+const addTwo = (num1, num2 ) => ( num1 + num2 )   // if write in parantheis () do not write return     
+
 console.log(addTwo(3,4));
