@@ -44,6 +44,12 @@ const chai = () => {
 // this is implicit return
 // const addTwo = (num1, num2 ) => num1 + num2  
 
-const addTwo = (num1, num2 ) => ( num1 + num2 )   // if write in parantheis () do not write return     
+// const addTwo = (num1, num2 ) => ( num1 + num2 )   // if write in parantheis () do not write return 
+
+const addTwo = (num1, num2 ) => ({username: "Pawan"} ) ///when return a {} object use paranthesis around object 
 
 console.log(addTwo(3,4));
+
+// const myArrya = [2, 5, 3, 7,8]
+
+// myArrya.forEach()
