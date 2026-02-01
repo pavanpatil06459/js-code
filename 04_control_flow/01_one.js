@@ -48,20 +48,35 @@ if (isUserloggedIn) {
 // } 
 
 
-const userLoggedIn = true
-const debitCard = true
-const loggedInFromGoogle = false
-const loggedInFromEmail = false
 
-if (userLoggedIn && debitCard && 2 == 2) {
-    console.log("allow to buy courses");
-} 
+// const isUserloggedInn = true
+// const temperature = 30
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("user logged in");
+// if (temperature > 40 ) {
+//     console.log("low");
+// } else {
+//     console.log("temprerature is High");
+// }
+//  console.log("executed");
+ 
+
+
+
+
+// const userLoggedIn = true
+// const debitCard = true
+// const loggedInFromGoogle = false
+// const loggedInFromEmail = false
+
+// if (userLoggedIn && debitCard && 2 == 2) {
+//     console.log("allow to buy courses");
+// } 
+
+// if (loggedInFromGoogle || loggedInFromEmail) {
+//     console.log("user logged in");
     
-}
+// }
 
-if (!loggedInFromGoogle && !loggedInFromEmail) {
-    console.log("User is not logged in because they don't have email or Google login");
-}
+// if (!loggedInFromGoogle && !loggedInFromEmail) {
+//     console.log("User is not logged in because they don't have email or Google login");
+// }
