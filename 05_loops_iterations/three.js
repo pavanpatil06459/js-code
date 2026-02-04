@@ -1,7 +1,7 @@
 // for of 
 
 // ["", "", ""] in arrya we import string 
-// [{}, {}, {}] in array we import objects
+// [{}, {}, {}] in array we import objects   // use mostly in for each
 
 const arr = [1, 2, 3, 4, 5]
 
