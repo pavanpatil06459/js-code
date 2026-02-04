@@ -26,3 +26,8 @@ map.set('IN', "India")     // this is not itterable
 for (const key in map) {
     // console.log(key);
 }
+
+// use of loops
+
+// Objects = for in loop
+// array = for of
