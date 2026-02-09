@@ -29,6 +29,22 @@
 // console.log(newNum);
 
 
+// const books = [
+//     {title: "Book One", Genre: "Finction", Publish: 1987},
+//     {title: "Book Two", Genre: "Non-Fiction", Publish: 1995},
+//     {title: "Book Three", Genre: "History", Publish: 2005},
+//     {title: "Book Four", Genre: "Science", Publish: 2015},
+//     {title: "Book Five", Genre: "Geography", Publish: 2020},
+//     {title: "Book six", Genre: "History", Publish: 2021},
+//     {title: "Book seven", Genre: "Science", Publish: 2016},
+//     {title: "Book eight", Genre: "Non-Fiction", Publish: 1994},
+// ];
+
+// const userBooks = books.filter( (bk) => bk.Genre ==='History' )
+
+// console.log(userBooks);   // all the history books will be shows in console 
+
+
 const books = [
     {title: "Book One", Genre: "Finction", Publish: 1987},
     {title: "Book Two", Genre: "Non-Fiction", Publish: 1995},
@@ -40,6 +56,16 @@ const books = [
     {title: "Book eight", Genre: "Non-Fiction", Publish: 1994},
 ];
 
-const userBooks = books.filter( (bk) => bk.Genre ==='History' )
 
+let userBooks = books.filter( (bk) => bk.Genre === 'History') // this print direct bcoz thair has no scope we use 
 console.log(userBooks);
+
+userBooks = books.filter( (bk) => { return bk.Publish >= 2000}) //when we use scope so write "return" to show the output
+console.log(userBooks);
+
+// two constion check like genre and publish 
+
+userBooks = books.filter( (bk) => { return bk.Publish >= 2000}) //when we use scope so write "return" to show the output
+console.log(userBooks);
+
+
