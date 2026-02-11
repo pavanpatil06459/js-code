@@ -54,18 +54,23 @@ const books = [
     {title: "Book six", Genre: "History", Publish: 2021},
     {title: "Book seven", Genre: "Science", Publish: 2016},
     {title: "Book eight", Genre: "Non-Fiction", Publish: 1994},
+    {title: "Book nine", Genre: "History", Publish: 1988},
+
 ];
 
 
 let userBooks = books.filter( (bk) => bk.Genre === 'History') // this print direct bcoz thair has no scope we use 
-console.log(userBooks);
+// console.log(userBooks);
 
-userBooks = books.filter( (bk) => { return bk.Publish >= 2000}) //when we use scope so write "return" to show the output
-console.log(userBooks);
+userBooks = books.filter( (bk) => { return bk.Publish >= 2000}) // this code prints books that publish after 2000
+// console.log(userBooks);
 
 // two constion check like genre and publish 
+userBooks = books.filter( (bk) => {return bk.Publish <= 2000 && bk.Genre === "History"   // this checks two condition under 2000 books and 2nd condition is checks genre of books
+} )
 
-userBooks = books.filter( (bk) => { return bk.Publish >= 2000}) //when we use scope so write "return" to show the output
 console.log(userBooks);
+
+
 
 
