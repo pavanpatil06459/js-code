@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="jungle" src="https://images.pexels.com/photos/1174183/pexels-photo-1174183.jpeg" alt="jungle"></li>
+            <li><img width="200px" id="flower" src="https://images.pexels.com/photos/459037/pexels-photo-459037.jpeg" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt=""></li>
+            <li><img width="200px" id="water" src="https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg" alt=""></li>
+            <li><img width="200px" id="redflower" src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt=""></li>
+            <li><a style="color: white; background-color: black; padding: 5px;" href="https://google.com" id="google" target="_blank">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('water').onclick = function(){
+    //     alert("water")
+    // }  this approach is not good
+    //attachEvent()
+    //JQuery - on
+    
+    // ** Study ** 
+     // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, ClientY, screenX, ScreenY
+    // altkey, ctrkey, shiftkey, keycode
+
+    // event bubling 
+    // -- capturing top se bottom pe 
+    //-- bubling bottom to top 
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //    console.log("clicked inside the ul");
+       
+    // }, false)
+
+    // document.getElementById('flower').addEventListener('click', function(e){
+    //    console.log("flower clicked");
+    //    e.stopPropagation // means event not bubling to top 
+    // }, false)
+
+    // document.getElementById('google').addEventListener
+    // ('click', function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    // }, false)
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        console.log(e.target.tagName);
+
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+              let removeIt = e.target.parentNode
+              removeIt.remove()
+        }
+
+      
+        
+    })
+        // removeIt.parentNode.removeChild(removeIt)
+   
+</script>
+</html>
